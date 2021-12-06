@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'cantarellregular';
+    src: url('fonts/Cantarell-Regular-webfont.eot');
+    src: url('fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cantarell-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Cantarell-Regular-webfont.woff') format('woff'),
+         url('fonts/Cantarell-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Cantarell-Regular-webfont.svg#cantarellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cantarellbold';
+    src: url('Cantarell-Bold-webfont.eot');
+    src: url('Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cantarell-Bold-webfont.woff2') format('woff2'),
+         url('Cantarell-Bold-webfont.woff') format('woff'),
+         url('Cantarell-Bold-webfont.ttf') format('truetype'),
+         url('Cantarell-Bold-webfont.svg#cantarellbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: cantarellregular, arial, sans-serif;
+}
+
+
+#bloc_page{
+	margin: auto;
+	border: 1px solid black;
+}
+
+#intro, #slider, .small-article, footer, .arrow, .slider-text{
+	border: 1px solid red;
+}
+
+/* INTRO */
+#intro{
+	background-color: #F1FBFF;
+}
+
+ul{
+	
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding-left: 0px;
+
+}
+
+li{
+	text-align:center;
+	width: 20%;
+	min-width: 8.5em;
+	flex: 1;
+	padding: 10px;
+	border: 2px solid #CEF1FF;
+	background-color: #F1FBFF;
+	border-radius: 0px 0px 25px 25px;
+	font-family: cantarellbold, arial, sans-serif;
+}
+
+.sommaire{
+	color: white;
+	text-decoration:none;
+}
+
+.sommaire:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.sommaire:active{
+	color: yellow;
+}
+
+.sommaire:visited{
+	color: purple;
+}
+
+
+/* SLIDER */
+#slider{
+	background: url("../images/terraria.jpg");
+	background-repeat: no-repeat;
+	background-size:cover; /* Permet à l'image de prendre toute la place dans la box */
+	height: 350px;
+	border: 2px solid #CEF1FF;
+	margin-bottom: 20px;
+	border-radius: 36px;
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: center; 
+	color: white;
+}
+
+.slider-text{
+	flex: .98 1 0;
+	vertical-align: bottom;
+	padding: 15px;
+}
+
+.arrow{
+    flex: .01 2 0;
+    align-self: center;
+	font-size: 4em;
+
+}
+
+.gauche{
+	text-align: left;
+	padding-left: 20px;
+}
+
+.droite{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.arrow a {
+	color: yellow;
+	text-decoration:none;
+
+}
+
+.arrow a:hover{
+	text-decoration: underline;
+}
+
+/* ARTICLES */
+#article-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.small-article{
+	width: 250px;
+	min-height: 100px;
+	background-color: #F1FBFF;
+}
+
+.small-article img{
+	background-repeat: repeat-x;
+}
+

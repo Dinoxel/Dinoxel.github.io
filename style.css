@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'open_regular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+em
+{
+	color: red, rgb(250,26,3), #4E3AAA; /* Peut être défini par une couleur pré-enregistrée, des valeurs rgb précises et en Hexadécimal */
+}
+
+body
+{
+	/* background-image: url("images/background_image.png"); 											/* Definit le fond, suit le texte de base */
+	/* background-attachment: fixed;																	/* Ne fait plus défiler le fond */
+	/* background-repeat: no-repeat;																	/* Ne duplique plus le fond */
+	/* background-position: top right;																	/* SPossibilité de cumuler plusieurs images */
+	/* background: url("images/background_image.png"), fixed, no-repeat, bottom left; /* Toutes les valeurs peuvent aussi être utilisées directement dans "background" */
+	background: url("images/logo_troll.jpg") no-repeat top right, url("images/background_image.png"); 
+	background-size: 200px 200px, auto;
+}
+
+* /* Affecte tous les éléments des pages */
+{
+	font-family: "Helvetica", "Comic Sans MS"; /* Helvetica best typo 👌 et Comic Sand MS en sauvetage si Helvetica n'est pas affiché */	
+}
+
+p /* Affecte tous les éléments des pages */
+{
+	font-family: "open_regular";
+	background: rgba(250,250,250,0.5);
+
+}
+
+div /* Affecte tous les éléments des pages */
+{
+	font-family: "Impact";
+}
+
+ul /* Affecte uniquement toutes les balises "ul" se trouvant après les "h1" */
+{
+	font-style: italic;
+	font-weight: bold;
+	font-family: "open_regular";
+}
+
+p strong /* Affecte toutes les balises "strong" se trouvant dans les "p" */
+{
+	color: red;
+	text-decoration: underline;
+}
+
+h1
+{
+	background: white;
+	border: 5px silver groove;
+	border-radius: 20px / 20px;
+	box-shadow: 6px 6px 6px grey;
+	text-shadow: 3px 3px 3px silver;
+	padding: 5px;
+	color: #3E3E3E;
+}
+
+h2
+{
+	color: navy;
+}
+
+h3
+{
+	color: purple;
+}
+
+p
+{
+	font-size: 1.2em; /* Peut aussi être small, medium, large ou être définit en pixel (px) */
+}
+
+a[title] /* Sélectionne tous les liens <a> qui possèdent un attribut "title". */
+{
+
+}
+
+a[title="Cliquez-ici"] /* Le title dans les liens <a> est exactement les mots "Clique-ici" */
+{
+
+}
+
+a[title*="ici"] /* Tous les titles dans les liens <a> contenant le mot "ici" */
+{
+
+}
+
+/* Conseillé d'utilisé tout le temps "class=" au lieu de "id=" */
+
+#logo /* uniquement référence à une seule ligne */      /* Si "id=" utilisé, commencer la ligne par # */
+{
+	font-style: italic;
+}
+
+.phrase /* référence à plusieurs lignes possibles */      /* Si "class=" utilisé, commencer la ligne par . */
+{
+	font-style: italic;
+}
+
+span
+{
+	color: orange;
+	font-style: italic;
+}
+
+.latin
+{
+	text-align: justify;
+	font-size: 1em;
+}
+
+.flottant
+{
+	float: left;
+}
+
+.flottant_alt
+{
+	float: right;
+}
+
+.flottant2
+{
+	clear: both;
+	text-align: justify;
+	font-size: 1em;
+}
+
+.page-4
+{
+	font-size: 3em;
+}
+
+#table
+{
+	background: white;
+	border: 2px dashed;
+	border-radius: 20px / 20px;
+	padding-left: 20px;
+}
+
+a:hover /* Permet de définir la couleur d'un lien  */
+{
+	color: green;
+}
+
+a:active
+{
+	color: red;
+}
+
+a:focus
+{
+	background-color: yellow;
+	color: navy;
+}
+
+a:visited
+{
+	color: purple;
+}
